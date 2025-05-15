@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Leitor de PDF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Leitor de PDF</h1>
+  <div id="pdf-text"></div>
+
+  <div class="controls">
+    <button id="prev">Página Anterior</button>
+    <span id="page-info"></span>
+    <button id="next">Próxima Página</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
